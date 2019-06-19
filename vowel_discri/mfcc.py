@@ -103,7 +103,7 @@ def melspectrogram(y=None, sr=16000, n_fft=400, hop_length=160,
 
 
 def mfcc(y=None, sr=16000, n_mfcc=13, dct_type=2, norm='ortho', 
-         zeroth_coef='energy', cep_mean_norm=False, **kwargs):
+         zeroth_coef=None, cep_mean_norm=False, **kwargs):
     """Mel-frequency cepstral coefficients (MFCCs)
 
     Parameters
